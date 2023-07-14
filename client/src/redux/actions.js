@@ -3,7 +3,7 @@ const local = "http://localhost:3001"
 const pivot = false
 
 
-aca te quedaste
+//aca te quedaste
 export function getRecipes() {
   return async (dispatch) => {
     await fetch((pivot ? deploy : local) + "/recipes")

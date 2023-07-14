@@ -1,0 +1,17 @@
+.search-recipe {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .search-recipe input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  
+  .search-recipe input:focus {
+    outline: none;
+    border-color: #007bff;
+  }

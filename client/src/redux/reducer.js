@@ -4,6 +4,7 @@ const initialState = {
     detail: null,
     diets: [],
     message: null,
+    
   };
   
   export default function reducerRecipe(state = initialState, action) {
