@@ -1,0 +1,11 @@
+.pageItem {
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .highlight {
+    background-color: yellow;
+  }
+  .pageItem :hover{
+    background-color: rgb(97, 97, 97);
+  }

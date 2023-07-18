@@ -1,0 +1,39 @@
+/* Pagination.module.css */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pageNumbers {
+  display: flex;
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.pageNumbers li {
+  margin: 0 5px;
+}
+
+.pageNumbers li button {
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pageNumbers li button:focus {
+  outline: none;
+}
+
+.pageNumbers li.active button {
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+.active button {
+  font-weight: bold;
+  background-color: red;
+}

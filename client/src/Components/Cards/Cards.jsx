@@ -7,15 +7,15 @@ const Cards = () => {
   const allRecipes = useSelector((state) => state.recipes);
   const currentRecipes = allRecipes.slice(0, 8);
   return (
-    <div className={styles.container}>
+    <div className={styles.containerA} >
       {currentRecipes.length ? (
-        <div>
+        <div className={styles.container}>
           {currentRecipes?.map((r, index) => {
             return (
               <Card
                 key={index}
                 id={r.id}
-                name={r.name}
+                title={r.title}
                 image={r.image}
                 diets={r.diets}
                 healthScore={r.healthScore}

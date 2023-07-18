@@ -1,26 +1,41 @@
-.contain {
-    width: 320px;
-    height: 320px;
-    padding: 25px;
-    background: #bfed91;
-    border: 0.3rem solid rgba(18, 51, 1, 0.967);
-  
-    box-shadow: 0 5px 5px rgb(0, 0, 0);
-  
-    /* backdrop-filter: blur(50px); */
-    transition: all 0.1s;
-    border-radius: 5%;
-
+.container {
+  background-color: rgb(251, 255, 193);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 10rem;
+  margin: 0.1rem;
+  position: relative;
 }
 
-.contain:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 15px rgb(0, 0, 0);
+.container:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease-in-out;
+}
+.img {
+  border-radius: 5%;
+  width: 95%;
+}
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(255, 0, 0, 0.2);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.img{
-    border-radius: 5%;
-    border: hsl(240, 9%, 98%) 8px solid;
-    
+.delete:hover {
+  background-color: red;
+}
+
+.linkTo {
+  border-radius: 5%;
+ width: 95%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
