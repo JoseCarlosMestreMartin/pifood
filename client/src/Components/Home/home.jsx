@@ -18,7 +18,7 @@ const Home = () => {
   const indexOfLastCard = currentPage * cantCardPerPage;
   const indexOfFirstCard = indexOfLastCard - cantCardPerPage;
 
-  const currentRecipes = allRecipes.slice(
+  const currentCards = allRecipes.slice(
     indexOfFirstCard,
     indexOfLastCard
   );
