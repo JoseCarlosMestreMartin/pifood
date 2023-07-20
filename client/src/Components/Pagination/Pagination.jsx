@@ -12,16 +12,12 @@ const Pagination = ({
 }) => {
   const totalPages = Math.ceil(cantAllCards / cantCardPerPage);
 
-  const handlePageChange = (newPage) => {
-    setPageToView(newPage);
-  };
-
   const renderPageNumbers = () => {
     const pageNumbers = [];
     for (let i = 1; i <= totalPages; i++) {
       pageNumbers.push(
         <li key={i} className={i == page ? styles.active : ""}>
-          <button onClick={() => handlePageChange(i)}>{i}</button>
+          <button onClick={() => setPageToView(i)}>{i}</button>
         </li>
       );
     }
@@ -30,13 +26,13 @@ const Pagination = ({
 
   const handlePrevPage = () => {
     if (page > 1) {
-      handlePageChange(page - 1);
+      setPageToView(page - 1);
     }
   };
 
   const handleNextPage = () => {
     if (page < totalPages) {
-      handlePageChange(page + 1);
+      setPageToView(page + 1);
     }
   };
 
