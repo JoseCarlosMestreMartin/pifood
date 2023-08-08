@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Cards.module.css";
 import Card from "../Card/Card";
 import { useSelector } from "react-redux";
-const Cards = () => {
+const Cards = ({firstCard, lastCard}) => {
   // const countriesToView= useSelector((state)=>state.countriesToView);
   const allRecipes = useSelector((state) => state.recipes);
-  const currentRecipes = allRecipes.slice(0, 8);
+  const currentRecipes = allRecipes.slice(firstCard, lastCard);
   return (
     <div className={styles.containerA} >
       {currentRecipes.length ? (
